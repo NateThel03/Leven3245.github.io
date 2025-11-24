@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Start Screen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Background PNG fills the entire screen */
+  .bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('img/background.png') center center / cover no-repeat;
+  }
+
+  /* START box */
+  .start-button {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-size: 28px;
+    color: black;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    border: 2px solid black;
+    transition: 0.15s ease;
+  }
+
+  .start-button:hover {
+    background: #f2f2f2;
+    transform: translateX(-50%) scale(1.05);
+  }
+</style>
+
+</head>
+<body>
+
+<div class="bg"></div>
+
+<!-- Change the href to ANY link you want -->
+<a class="start-button" href="https://www.youtube.com">START</a>
+
+</body>
+</html>
